@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Media Player</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+	<div class="container">
+	<div class="player">
+		<div class="player__controls">
+			<div class="player__btn player__btn--small" id="previous">
+				<i class='bx bx-left-arrow-alt' ></i>
+			</div>
+			<h5 class="player__title">playing now</h5>
+			<div class="player__btn player__btn--small" id="icon-menu">
+				<i class='bx bxs-playlist' ></i>
+			</div>
+		</div>
+		<div class="player__album">
+			<img src="archgoat.jpg" alt="Album Cover" class="player__img" loading="lazy" />
+		</div>
+
+		<h2 class="player__artist">Archgoat</h2>
+		<h3 class="player__song">profanator of the 1st commandment</h3>
+
+		<input type="range" value="20" min="0" class="player__level" id="range" />
+		<div class="audio-duration">
+			<div class="start">00:01</div>
+			<div class="end">03:35</div>
+		</div>
+
+		<audio class="player__audio" controls id="audio">
+			<source src="profanator-of-the-1st-commandment.mp3" type="audio/mpeg" />
+		</audio>
+
+		<div class="player__controls">
+			<div class="player__btn player__btn--small" id="backward">
+				<i class='bx bx-skip-previous' ></i>
+			</div>
+
+			<div class="player__btn player__btn--medium blue play" id="play">
+				<i class='bx bx-play play-btn' ></i>
+				<i class='bx bx-pause pause-btn hide' ></i>
+			</div>
+
+			<div class="player__btn player__btn--small" id="forward">
+				<i class='bx bx-skip-next' ></i>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+<script src="scripts.js"></script>
+</body>
+</html>
